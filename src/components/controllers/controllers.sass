@@ -1,0 +1,50 @@
+.controllers
+    display: flex
+    max-width: 400px
+    margin: auto
+    align-content: center
+    justify-content: space-around
+    img
+        height: 50px
+        width: 50px
+        &:hover
+            cursor: pointer
+
+.settingIconWrapper
+    position: relative 
+    div
+        opacity: 0
+        position: absolute
+        top: -200%
+        width: 200px
+        height: 80px
+        right: 50%
+        transform: translate(50%)
+        display: flex
+        flex-direction: column
+        background-color: white
+        padding: 15px
+        border-radius: 5px
+        box-shadow:  0 15px 15px rgba(0,0,0,.2)
+        input
+            height: 40px
+            padding: 5px
+            font-size: 20px
+            outline: none
+            border: none   
+        &::after
+            content: ''
+            background-color: white
+            width: 20px
+            height: 20px
+            left: 50%
+            transform: translateX(-50%) rotate(45deg)
+            bottom: -8px   
+            position: absolute      
+
+@media (max-width: 478px)
+    .controllers img
+        height: 40px
+        width: 40px
+    .settingIconWrapper div
+        top: -210%        

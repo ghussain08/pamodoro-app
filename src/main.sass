@@ -1,0 +1,38 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: #{'Quicksand', sans-serif}
+    color: #333
+    
+a
+    color: #333
+    text-decoration: none
+.timerOption
+    margin: 30px 0 20px 0
+    padding: 15px 0
+    text-align: center
+    button
+        padding: 15px 25px
+        background-color: white
+        border: 1px solid #333
+        &:nth-child(even)
+            border-left: none
+            border-right: none
+        &:nth-child(1)
+            border-radius: 5px 0 0 5px
+        &:nth-child(3)
+            border-radius: 0 5px 5px 0         
+        &:hover
+            cursor: pointer
+
+@media (max-width:380px)
+    .timerOption
+        padding: 10px 0
+        button
+            padding: 8px 12px
+
+@import './components/timer' 
+@import './components/controllers/controllers'       
